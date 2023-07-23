@@ -1,0 +1,49 @@
+/* styles.css */
+
+section {
+    padding: 20px;
+  } 
+    
+.mechanics-images h2 {
+    margin-top: 0;
+  }
+  
+  .image-gallery {
+    display:block;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+    
+}
+
+/* Keyframes for the animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Applying animation to the images */
+.image-list li {
+    animation: slideInFromLeft 1s ease-in-out;
+}
